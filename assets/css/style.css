@@ -1,0 +1,237 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* -------------------  BACKGROUND  ------------------------*/
+
+.callout-container {
+    height: 90vh;
+    background: url('/assets/img/home-banner4.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+}
+
+.callout-container::after {
+    background: url('/assets/img/pattern.png') repeat;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* -------------------  NAVIGATION  ------------------------*/
+
+@media screen and (min-width: 992px) {
+    .skew>li {
+        display: inline-block;
+        transition: background 0.5s;
+        -moz-transform: skew(-12deg);
+        -ms-transform: skew(-12deg);
+        -webkit-transform: skew(-12deg);
+        -o-transform: skew(-12deg);
+        transform: skew(-0deg);
+        border-left: 1px solid #af2330;
+    }
+
+    .skew>li:hover {
+        display: inline-block;
+        -webkit-transition: background-color 0.3s ease-out;
+        -moz-transition: background-color 0.3s ease-out;
+        -o-transition: background-color 0.3s ease-out;
+        transition: background-color 0.3s ease-out;
+        background-color: rgba(0, 0, 0, .10);
+    }
+
+    .skew>li:active {
+        display: inline-block;
+        -webkit-transition: background-color 0.3s ease-out;
+        -moz-transition: background-color 0.3s ease-out;
+        -o-transition: background-color 0.3s ease-out;
+        transition: background-color 0.3s ease-out;
+        background-color: #af2330;
+    }
+
+    .skew>li:last-child {
+        border-right: 1px solid rgb(184, 13, 50);
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .skew>li {
+        background-color: #f8f9fa;
+        border-top: 1px solid #af2330;
+
+    }
+
+    a.navbar-brand {
+        margin-left: 15px;
+    }
+
+    .navbar-toggler {
+        margin-right: 5vw;
+        
+    }
+
+    .skew>li:last-child {
+        border-bottom: 1px solid #af2330;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+    .nav-link {
+    margin-left: 5vw;
+    padding-left: 15px !important;
+    }
+}
+
+.fit-image {
+    height: 7vh;
+    padding-left: 5vw;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, .6);
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link:active {
+    color: #fff;
+}
+
+.navbar {
+    height: 9vh;
+    z-index: 43;
+}
+
+
+i {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.nav-link {
+    font-size: 1.5em;
+}
+
+/* -------------------  NAVIGATION  ------------END---------*/
+
+/* -------------------  CONTENT     ------------------------*/
+.home-card {
+    opacity: 0.9;
+}
+
+.vig-red {
+    background-color: #af2330;
+    border: 1px solid #af2330;
+    opacity: 0.85;
+    color: #fff;
+}
+
+/* -------------------  CONTENT     ------------END---------*/
+
+/* -------------------  FOOTER      ------------------------*/
+
+footer {
+    min-height: 200px;
+    margin: 0;
+    padding: 0;
+    background-color: #1f2b36;
+    color: #fff;
+    font-size: 16px;
+}
+
+footer p {
+    margin-top: 0;
+    margin-bottom: 0.2em;
+}
+
+footer div {
+    position: relative;
+}
+
+#footer-styling {
+    padding: 20px;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links {
+    align-items: center;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 22px;
+    padding: 5px;
+
+}
+
+.map-responsive {
+    overflow: hidden;
+    // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+    padding-top: 56.25%;
+    position: relative;
+  }
+   
+  .map-responsive iframe {
+     border: 0;
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
+  }
+
+label {
+    color: #1f2b36
+}
+
+.company-details {
+    padding-left: 20px;
+}
+
+ul {
+    padding-inline-start: 0px;
+
+}
+
+.footer-links {
+    padding-right: 10px;
+}
+.copyright {
+    background-color: #1f2b36;
+    color: #fff;
+    padding-left: 20px;
+}
+
+/* -------------------  ANIMATIONS  ------------------------*/
+/* -------------------  FOOTER      ------------------------*/
+/* -------------------  HEADER      ------------------------*/
+/* -------------------  BACKGROUND  ------------------------*/
+/* -------------------          ------------------------*/
